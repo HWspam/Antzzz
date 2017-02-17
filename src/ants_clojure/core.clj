@@ -47,7 +47,7 @@
         javafx.scene.paint.Color/BLACK))))
 
 (defn moveAnts []
-  (doall (pmap redder (pmap moveAnt (deref @ants)))))
+  (doall  (pmap redder (pmap moveAnt @ants))))
 
 
 (def lastTimestamp (atom 0))
